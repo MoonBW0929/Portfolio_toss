@@ -34,7 +34,7 @@ export default function Profile() {
 
   return (
     <section id="profile" className="section">
-      <div className="container sectionInner">
+      <div className="container">
 
         <div id='intro'>
           <h1>안녕하세요,</h1>
@@ -42,7 +42,11 @@ export default function Profile() {
           <h1>개발자 문병욱입니다</h1>
         </div>
 
-        <h1 className="sectionTitle">Profile</h1>
+        <div className="sectionTitleBox">
+          <h1 className="sectionTitle">Profile</h1>
+        </div>
+
+
         <div id='profileGrid'>
 
           <section id='pic'>

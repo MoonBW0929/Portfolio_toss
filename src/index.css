@@ -25,11 +25,6 @@ body {
   margin: 0 auto;
 }
 
-.container2 {
-  width: 100%;
-  margin: 0 auto;
-}
-
 .skipLink {
   position: absolute;
   left: -999px;
@@ -50,7 +45,7 @@ body {
 }
 
 .headerInner {
-  height: 64px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -59,12 +54,13 @@ body {
 .brand {
   font-weight: 700;
   letter-spacing: 0.2px;
+  font-size: 20px;
 }
 
 .nav {
   display: flex;
   gap: 14px;
-  font-size: 14px;
+  font-size: 16px;
 }
 .nav a {
   text-decoration: none;
@@ -82,20 +78,27 @@ body {
 .section {
   min-height: calc(100svh);
   scroll-snap-align: start; 
-  padding: 72px 0;
-  border-bottom: 1px solid rgba(127, 127, 127, 0.12);
-  background-color: #f9f7ed;
-}
+  scroll-margin-top: 80px;
+  padding: 50px 0 0 0;
 
-.sectionInner {
-  display: grid;
-  gap: 20px;
+  border-bottom: 1.2px solid rgba(127, 127, 127, 0.2);
+  background-color: #f9f7ed;
 }
 
 .sectionTitle {
   margin: 0;
   font-size: clamp(28px, 3vw, 40px);
   letter-spacing: -0.02em;
+}
+
+.sectionTitleBox {
+  margin-bottom: 40px;
+}
+
+.sectionDescription {
+  max-width: 720px;
+  font-size: 17px;
+  color: #666;
 }
 
 .footer {

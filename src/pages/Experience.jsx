@@ -363,17 +363,20 @@ function ProjectSection({ project }) {
 export default function Experience() {
   return (
     <section id="experience" className="section">
-      <div className="page-title-box">
-        <h1>Selected Projects</h1>
-        <p className="page-description">
-          문제를 정의하고 해결한 프로젝트입니다.
-        </p>
-      </div>
+      <div className="container">
 
-      <div className="project-list">
-        {projects.map((project) => (
-          <ProjectSection key={project.title} project={project} />
-        ))}
+        <div className="sectionTitleBox">
+          <h1 className='sectionTitle'>Selected Projects</h1>
+          <p className="sectionDescription">
+            문제를 정의하고 해결한 프로젝트입니다.
+          </p>
+        </div>
+
+        <div className="project-list">
+          {projects.map((project) => (
+            <ProjectSection key={project.title} project={project} />
+          ))}
+        </div>
       </div>
     </section>
   )

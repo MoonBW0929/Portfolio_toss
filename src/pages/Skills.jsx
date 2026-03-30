@@ -43,8 +43,14 @@ export default function Skills() {
 
   return (
     <section id="skills" className="section">
-      <div className="container sectionInner">
-        <h1 className="sectionTitle">Skills</h1>
+      <div className="container">
+
+        <div className="sectionTitleBox">
+          <h1 className="sectionTitle">Skills</h1>
+          <p className="sectionDescription">
+            문제를 정의하고 해결한 프로젝트입니다.
+          </p>
+        </div>
 
         <div className="skillsBox">
           <div className='subTitle'>My Skills & Technologies</div>

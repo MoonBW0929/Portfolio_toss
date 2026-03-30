@@ -141,13 +141,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   gap: 25px;
   margin-top: 24px;
   border-radius: 50px;
-  padding: 20px;
 
   background-color: #fff;
-
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 
   padding-left: 10%;
@@ -406,11 +405,6 @@
   padding: 80px 0;
 }
 
-.page-title-box {
-  margin-bottom: 56px;
-  margin-left: 10%;
-}
-
 .page-eyebrow {
   font-size: 14px;
   font-weight: 700;
@@ -418,27 +412,12 @@
   margin-bottom: 12px;
 }
 
-.page-title-box h1 {
-  font-size: 42px;
-  font-weight: 800;
-  margin-bottom: 16px;
-  line-height: 1.2;
-}
-
-.page-description {
-  max-width: 720px;
-  font-size: 17px;
-  line-height: 1.7;
-  color: #666;
-}
-
 .project-list {
   display: flex;
   flex-direction: column;
-  gap: 72px;
 
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-top: 24px;
+  gap: 72px;
 }
 
 .project-section {
@@ -730,9 +709,5 @@
 
   .project-title {
     font-size: 26px;
-  }
-
-  .page-title-box h1 {
-    font-size: 34px;
   }
 }
