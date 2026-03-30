@@ -12,34 +12,28 @@ import { useEffect, useState } from 'react';
 export default function Profile() {
 
   const words = [
-    "사용자와 데이터를 잇는",
-    "꾸준히 성장하는",
-    "사용자 경험을 중시하는"
+    "사용자 행동을 이끄는",
+    "데이터를 사용자 경험으로 연결하는",
+    "흐름을 설계하는"
   ];
   const [index, setindex] = useState(0);
 
   // word change effect
   useEffect(() => {
-    let timer
-
-    // 2sec cycle
-    const tick = () => {
+    const timer = setInterval(() => {
       setindex((prev) => (prev + 1) % words.length);
-      timer = setTimeout(tick, 2000);
-    }
+    }, 2000);
 
-    timer = setTimeout(tick, 2000);
-
-    return () => clearTimeout(timer);
-  }, []);
+    return () => clearInterval(timer);
+  }, [words.length]);
 
   return (
     <section id="profile" className="section">
       <div className="container">
 
-        <div id='intro'>
+        <div className='introBox'>
           <h1>안녕하세요,</h1>
-          <div className='introWord'>{words[index]}</div>
+          <div className='introWordBox'>{words[index]}</div>
           <h1>개발자 문병욱입니다</h1>
         </div>
 
