@@ -8,9 +8,9 @@ export default function Skills() {
     "jQuery", "React", "React-native", "Vite",
     "Flask", "FastAPI", "Node.js",
     "OracleDB", "MongoDB", "DBeaver",
-    "Azure AI", "Pytorch",
+    "Azure", "Pytorch",
     "Qt", "Github", "Expo",
-    "Arduino", "Embedded"
+    "Firebase", "Arduino", "Embedded"
   ];
 
   // Logo name dict
@@ -28,7 +28,7 @@ export default function Skills() {
     'Node.js': 'devicon:nodejs',
     OracleDB: 'devicon:oracle',
     MongoDB: 'devicon:mongodb',
-    'Azure AI': 'devicon:azure',
+    'Azure': 'devicon:azure',
     Pytorch: 'devicon:pytorch',
     Qt: 'devicon:qt',
     Github: "devicon:github",
@@ -36,7 +36,8 @@ export default function Skills() {
     Arduino: "devicon:arduino",
     DBeaver: "devicon:dbeaver",
     Embedded: "devicon:embeddedc",
-    jQuery: "devicon:jquery"
+    jQuery: "devicon:jquery",
+    Firebase: "devicon:firebase"
   };
   
 
