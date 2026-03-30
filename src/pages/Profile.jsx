@@ -31,28 +31,27 @@ export default function Profile() {
     <section id="profile" className="section">
       <div className="container">
 
+        <div className="sectionTitleBox">
+          <h1 className="sectionTitle">Profile</h1>
+        </div>
+
         <div className='introBox'>
           <h1>안녕하세요,</h1>
           <div className='introWordBox'>{words[index]}</div>
           <h1>개발자 문병욱입니다</h1>
         </div>
 
-        <div className="sectionTitleBox">
-          <h1 className="sectionTitle">Profile</h1>
-        </div>
+        <div className='profileGrid'>
 
-
-        <div id='profileGrid'>
-
-          <section id='pic'>
-            <div id='img_pic'>
+          <section className='picBox'>
+            <div className='img_pic'>
               <img src="/assets/profile_picture.jpg" alt="Profile Picture" />
             </div>
           </section>
 
-          <section id='info'>
+          <section className='infoBox'>
             <div className='subTitle'>인적사항</div>
-            <div id='infoGrid'>
+            <div className='infoGrid'>
               <div className='infoGridItem'>
                 <FaUserCircle className='icon'/>
                 <span className='infoText'>문병욱</span>
