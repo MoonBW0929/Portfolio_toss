@@ -76,6 +76,10 @@ body {
   scroll-snap-type: y mandatory;
 }
 
+.contentInner{
+  padding-bottom: 100px;
+}
+
 .section {
   min-height: calc(100svh);
   scroll-snap-align: start; 

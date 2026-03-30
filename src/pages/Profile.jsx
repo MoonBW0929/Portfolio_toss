@@ -29,7 +29,7 @@ export default function Profile() {
 
   return (
     <section id="profile" className="section">
-      <div className="container">
+      <div className="container contentInner">
 
         <div className="sectionTitleBox">
           <h1 className="sectionTitle">Profile</h1>
