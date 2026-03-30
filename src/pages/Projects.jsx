@@ -133,18 +133,17 @@ const projects = [
       [
         '센서 식별 번호와 검사 데이터를 매칭하여 저장',
         '출하 전 불량 여부를 확인할 수 있는 검사 기능 구성',
-        '작업자가 필요한 정보를 빠르게 확인할 수 있도록 UI 단순화'
+        '작업자가 출하 시 필요한 정보를 빠르게 확인할 수 있도록 UI 단순화'
       ]
     ],
     implementation: [
       '센서 데이터 추적 구조 설계',
-      '다수 센서 정보 동시 확인 UI 구현',
       '직관적인 상태 표현 방식 적용',
     ],
     result: [
       '센서의 생산 및 검사 이력을 추적할 수 있는 구조를 구축함으로써,',
       '문제 발생 시 원인 파악이 가능해졌으며 데이터 기반으로 품질을 관리할 수 있는 환경을 만들었습니다.\n',
-      '또한 다수의 센서 정보를 직관적으로 확인할 수 있도록 UI를 개선하여 작업자의 판단 속도와 정확도를 향상시킬 수 있었습니다.'
+      '또한 센서 데이터를 직관적으로 확인할 수 있도록 UI를 개선하여 작업자의 판단 속도와 정확도를 향상시킬 수 있었습니다.'
     ].join('\n'),
     learned: [
       'UI는 단순히 데이터를 보여주는 것이 아니라,',
@@ -363,7 +362,7 @@ function ProjectSection({ project }) {
 export default function Projects() {
   return (
     <section id="projects" className="section">
-      <div className="container">
+      <div className="container contentInner">
 
         <div className="sectionTitleBox">
           <h1 className='sectionTitle'>Selected Projects</h1>
