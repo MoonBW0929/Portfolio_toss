@@ -15,7 +15,8 @@ body {
   margin: 0;
   font-family: "Pretendard", sans-serif;
   line-height: 1.5;
-  color: #2f2f2f;
+  color: #334155;
+  background-color: #f7f9fc;
 }
 
 .container {
@@ -31,6 +32,9 @@ body {
   top: 8px;
   padding: 10px 12px;
   border-radius: 10px;
+  background: #ffffff;
+  color: #253041;
+  border: 1px solid #e1e7f0;
 }
 .skipLink:focus { left: 12px; z-index: 9999; }
 
@@ -39,9 +43,9 @@ body {
   top: 0;
   z-index: 50;
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(127, 127, 127, 0.25);
-  background-color: #f9f7ed;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
+  border-bottom: 1px solid rgba(225, 231, 240, 0.95);
+  background-color: rgba(250, 252, 255, 0.88);
+  box-shadow: 0 6px 20px rgba(110, 135, 179, 0.06);
 }
 
 .headerInner {
@@ -55,6 +59,7 @@ body {
   font-weight: 700;
   letter-spacing: 0.2px;
   font-size: 20px;
+  color: #253041;
 }
 
 .nav {
@@ -67,10 +72,15 @@ body {
   padding: 8px 10px;
   border-radius: 10px;
   color: inherit;
-  opacity: 0.85;
+  opacity: 0.88;
   font-weight: bold;
+  transition: color 0.2s ease, transform 0.2s ease, background-color 0.2s ease;
 }
-.nav a:hover { color: #c97b63; transition: color 0.2s ease; transform: scale(1.05);}
+.nav a:hover {
+  color: #6E87B3;
+  background-color: rgba(110, 135, 179, 0.06);
+  transform: scale(1.05);
+}
 
 .main {
   scroll-snap-type: y mandatory;
@@ -86,14 +96,16 @@ body {
   scroll-margin-top: 80px;
   padding: 50px 0 0 0;
 
-  border-bottom: 1.2px solid rgba(127, 127, 127, 0.2);
-  background-color: #f9f7ed;
+  border-bottom: 1px solid rgba(225, 231, 240, 0.95);
+  background:
+    linear-gradient(180deg, #fbfcfe 0%, #f7f9fc 100%);
 }
 
 .sectionTitle {
   margin: 0;
   font-size: clamp(25px, 1vw, 40px);
   letter-spacing: -0.02em;
+  color: #253041;
 }
 
 .sectionTitleBox {
@@ -103,17 +115,17 @@ body {
 .sectionDescription {
   max-width: 720px;
   font-size: 17px;
-  color: #666;
+  color: #6b7280;
 }
 
 .footer {
-  border-top: 1px solid rgba(127, 127, 127, 0.25);
-  background-color:rgba(0, 0, 0, 0.8);
+  border-top: 1px solid rgba(225, 231, 240, 0.5);
+  background-color: rgba(16, 24, 32, 0.92);
 }
 .footerInner {
   height: 64px;
   display: flex;
   align-items: center;
   font-size: 11px;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.65);
 }

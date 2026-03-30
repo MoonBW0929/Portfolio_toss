@@ -3,8 +3,9 @@ import { useState } from 'react'
 
 // react icons
 import { IoIosLink } from "react-icons/io";
-import { FaPencilAlt } from "react-icons/fa";
+import { MdOutlineReportProblem } from "react-icons/md";
 import { FaRegLightbulb } from "react-icons/fa";
+import { FaPencilAlt } from "react-icons/fa";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const projects = [
@@ -246,7 +247,7 @@ function ProjectSection({ project }) {
         {/* problem */}
         <article className="project-detail-card">
           <div className="project-detail-title">
-            <FaRegLightbulb />
+            <MdOutlineReportProblem />
             <h3>Problem</h3>
           </div>
           <p style={{ whiteSpace: "pre-line" }}>{project.problem}</p>
@@ -278,7 +279,7 @@ function ProjectSection({ project }) {
         {/* implementation */}
         <article className="project-detail-card project-detail-card-wide">
           <div className="project-detail-title">
-            <FaPencilAlt />
+            <FaRegLightbulb />
             <h3>Implementation</h3>
           </div>
           <ul>
