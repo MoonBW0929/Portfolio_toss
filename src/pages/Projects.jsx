@@ -6,6 +6,9 @@ import { IoIosLink } from "react-icons/io";
 import { MdOutlineReportProblem } from "react-icons/md";
 import { FaRegLightbulb } from "react-icons/fa";
 import { FaPencilAlt } from "react-icons/fa";
+import { BsLightningCharge } from "react-icons/bs";
+import { AiFillProduct } from "react-icons/ai";
+import { FaBook } from "react-icons/fa";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const projects = [
@@ -187,23 +190,40 @@ function ProjectSection({ project }) {
           </div>
 
           <div className="project-image-box">
-            <img 
-              src={project.images[currentImageIndex]["src"]}
-              alt={project.title} 
-              className="project-image" 
-            />
+            <div
+              className="project-image-slider"
+              style={{
+                width: `${project.images.length * 100}%`,
+                transform: `translateX(-${(100 / project.images.length) * currentImageIndex}%)`,
+              }}
+            >
+              {project.images.map((image, index) => (
+                <div
+                  className="project-image-slide"
+                  key={index}
+                  style={{ width: `${100 / project.images.length}%` }}
+                >
+                  <img
+                    src={image.src}
+                    alt={`${project.title} ${image.title}`}
+                    className="project-image"
+                  />
+                </div>
+              ))}
+            </div>
+
             {project.images.length > 1 && (
               <>
-                <button className="carousel-button prev" onClick={prevImage}>
+                <button type="button" className="carousel-button prev" onClick={prevImage}>
                   <FaChevronLeft />
                 </button>
-                <button className="carousel-button next" onClick={nextImage}>
+                <button type="button" className="carousel-button next" onClick={nextImage}>
                   <FaChevronRight />
                 </button>
                 <div className="carousel-indicators">
                   {project.images.map((_, index) => (
-                    <span 
-                      key={index} 
+                    <span
+                      key={index}
                       className={`indicator ${index === currentImageIndex ? 'active' : ''}`}
                       onClick={() => setCurrentImageIndex(index)}
                     ></span>
@@ -294,6 +314,7 @@ function ProjectSection({ project }) {
       {project.deepDive && (
         <section className="project-deepdive">
           <h2 className="deepdive-title">
+            <BsLightningCharge />
             Deep Dive - {project.deepDive.title}
           </h2>
 
@@ -316,6 +337,7 @@ function ProjectSection({ project }) {
       {/* result */}
       <article className="project-detail-card project-result-card">
         <div className="project-detail-title">
+          <AiFillProduct />
           <h3>Result</h3>
         </div>
         <p style={{ whiteSpace: "pre-line" }}>{project.result}</p>
@@ -324,6 +346,7 @@ function ProjectSection({ project }) {
       {/* learned */}
       <article className="project-detail-card project-learned-card">
         <div className="project-detail-title">
+          <FaBook />
           <h3>Learned</h3>
         </div>
         <p style={{ whiteSpace: "pre-line" }}>{project.learned}</p>
