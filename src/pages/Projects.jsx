@@ -1,4 +1,4 @@
-import './page_styles.css'
+import '../styles/projects_styles.css'
 import { useState } from 'react'
 
 // react icons

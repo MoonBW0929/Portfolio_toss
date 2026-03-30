@@ -1,4 +1,5 @@
-import './page_styles.css'
+import '../styles/profile_styles.css'
+
 // react icons
 import { FaUserCircle } from "react-icons/fa";
 import { MdDateRange } from "react-icons/md";

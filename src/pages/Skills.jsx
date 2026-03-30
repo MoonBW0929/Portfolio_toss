@@ -1,4 +1,4 @@
-import './page_styles.css'
+import '../styles/skills_styles.css'
 import { Icon } from '@iconify/react';
 
 export default function Skills() {
