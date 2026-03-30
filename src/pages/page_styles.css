@@ -616,6 +616,14 @@
   background: #f9fafb;
 }
 
+.project-result-card {
+  margin-top: 28px;
+  padding: 24px;
+  border-radius: 20px;
+  background: #ffffff;
+  border: 1px solid #e5e8eb;
+}
+
 .project-detail-card-wide {
   grid-column: span 2;
 }
@@ -666,6 +674,41 @@
 .project-link-button.secondary {
   background: #e8f3ff;
   color: #3182f6;
+}
+
+.project-deepdive {
+  margin-top: 48px;
+  padding: 28px;
+  border-radius: 20px;
+  background: #f9fafb;
+}
+
+.deepdive-title {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.deepdive-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.deepdive-subtitle {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.deepdive-section ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.deepdive-section li {
+  line-height: 1.8;
+  color: #4e5968;
 }
 
 @media (max-width: 960px) {
