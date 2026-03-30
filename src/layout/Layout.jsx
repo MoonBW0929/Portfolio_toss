@@ -13,7 +13,7 @@ export default function Layout({ children }) {
           <nav className="nav">
             <a href="#profile">profile</a>
             <a href="#skills">skills</a>
-            <a href="#experience">experience</a>
+            <a href="#projects">projects</a>
           </nav>
         </div>
       </header>

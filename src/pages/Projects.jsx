@@ -360,9 +360,9 @@ function ProjectSection({ project }) {
   )
 }
 
-export default function Experience() {
+export default function Projects() {
   return (
-    <section id="experience" className="section">
+    <section id="projects" className="section">
       <div className="container">
 
         <div className="sectionTitleBox">

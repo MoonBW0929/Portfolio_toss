@@ -1,8 +1,8 @@
 import './App.css'
 import Layout from './layout/layout.jsx'
-import Experience from './pages/Experience.jsx'
 import Profile from './pages/Profile.jsx'
 import Skills from './pages/skills.jsx'
+import Projects from './pages/Projects.jsx'
 
 function App() {
 
@@ -10,7 +10,7 @@ function App() {
     <Layout>
       <Profile />
       <Skills />
-      <Experience />
+      <Projects />
     </Layout>
   )
 }
