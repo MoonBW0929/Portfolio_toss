@@ -68,8 +68,9 @@ body {
   border-radius: 10px;
   color: inherit;
   opacity: 0.85;
+  font-weight: bold;
 }
-.nav a:hover { color: orange; transition: color 0.2s ease; transform: scale(1.05); font-weight: bold;}
+.nav a:hover { color: #c97b63; transition: color 0.2s ease; transform: scale(1.05);}
 
 .main {
   scroll-snap-type: y mandatory;

@@ -14,7 +14,6 @@ export default function Layout({ children }) {
             <a href="#profile">profile</a>
             <a href="#skills">skills</a>
             <a href="#experience">experience</a>
-            <a href="#contact">contact</a>
           </nav>
         </div>
       </header>
