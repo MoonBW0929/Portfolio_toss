@@ -1,7 +1,7 @@
 import './App.css'
-import Layout from './layout/layout.jsx'
+import Layout from './layout/Layout.jsx'
 import Profile from './pages/Profile.jsx'
-import Skills from './pages/skills.jsx'
+import Skills from './pages/Skills.jsx'
 import Projects from './pages/Projects.jsx'
 
 function App() {
