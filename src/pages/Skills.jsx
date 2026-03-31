@@ -26,7 +26,8 @@ export default function Skills() {
     DBeaver: "devicon:dbeaver",
     Embedded: "devicon:embeddedc",
     jQuery: "devicon:jquery",
-    Firebase: "devicon:firebase"
+    Firebase: "devicon:firebase",
+    Vscode: "devicon:vscode",
   };
 
   const skillGroups = [
@@ -53,7 +54,7 @@ export default function Skills() {
     {
       title: "Tools / Others",
       description: "개발 과정에서 함께 사용한 도구 및 기타 기술입니다.",
-      skills: ["Qt", "Github", "Expo", "Vite", "Embedded"]
+      skills: ["Qt", "Github", "Expo", "Vite", 'Vscode', "Embedded"]
     }
   ];
 
