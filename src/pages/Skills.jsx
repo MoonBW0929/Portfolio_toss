@@ -23,7 +23,6 @@ export default function Skills() {
     Qt: 'devicon:qt',
     Github: "devicon:github",
     Expo: "devicon:expo",
-    Arduino: "devicon:arduino",
     DBeaver: "devicon:dbeaver",
     Embedded: "devicon:embeddedc",
     jQuery: "devicon:jquery",
@@ -39,7 +38,7 @@ export default function Skills() {
     {
       title: "Frontend",
       description: "사용자 화면과 인터랙션 구현에 사용했습니다.",
-      skills: ["jQuery", "React", "React-native", "Vite"]
+      skills: ["jQuery", "React", "React-native"]
     },
     {
       title: "Backend",
@@ -54,7 +53,7 @@ export default function Skills() {
     {
       title: "Tools / Others",
       description: "개발 과정에서 함께 사용한 도구 및 기타 기술입니다.",
-      skills: ["Qt", "Github", "Expo", "Arduino", "Embedded"]
+      skills: ["Qt", "Github", "Expo", "Vite", "Embedded"]
     }
   ];
 
