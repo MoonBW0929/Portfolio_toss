@@ -1,5 +1,7 @@
 import '../styles/profile_styles.css'
 
+import profileImg from '/assets/profile_picture.jpg'
+
 // react icons
 import { MdDateRange } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
@@ -44,7 +46,7 @@ export default function Profile() {
 
           <section className='picBox'>
             <div className='img_pic'>
-              <img src="/assets/profile_picture.jpg" alt="Profile Picture" />
+              <img src={profileImg} alt="Profile Picture" />
             </div>
             <h3>Moon Byeong Wook</h3>
             <h2>문병욱</h2>

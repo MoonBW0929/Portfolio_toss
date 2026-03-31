@@ -1,6 +1,12 @@
 import '../styles/projects_styles.css'
 import { useState } from 'react'
 
+// image
+import project1_1 from '/assets/project1/project1_1.png'
+import project1_2 from '/assets/project1/project1_2.png'
+import project1_3 from '/assets/project1/project1_3.png'
+import project2_1 from '/assets/project2/project2_1.png'
+
 // react icons
 import { IoIosLink } from "react-icons/io";
 import { MdOutlineReportProblem } from "react-icons/md";
@@ -25,19 +31,19 @@ const projects = [
     tech: ['React Native', "Expo", 'FastAPI', 'OracleDB', 'Azure'],
     images: [
       {
-        src: '/assets/project1/project1_1.png',
+        src: project1_1,
         title: '01. 신규 신고 등록',
         caption:
           '사진, 위치, 상세 내용을 입력해 파손된 공공기물을 직접 등록할 수 있도록 설계했습니다.',
       },
       {
-        src: '/assets/project1/project1_2.png',
+        src: project1_2,
         title: '02. 신고 정보 공유 및 지도 조회',
         caption:
           '새로운 신고가 등록되면 알림으로 공유하고, 지도에서 주변 파손 위치와 상세 신고 내역을 바로 확인할 수 있도록 구성했습니다.',
       },
       {
-        src: '/assets/project1/project1_3.png',
+        src: project1_3,
         title: '03. 참여 이력 및 순위 확인',
         caption:
           '사용자는 본인의 신고 내역과 처리 상태를 다시 확인할 수 있고, 순위표를 통해 참여 결과를 직관적으로 확인할 수 있도록 했습니다.',
@@ -121,7 +127,7 @@ const projects = [
     tech: ['Qt', 'C++'],
     images: [
       {
-        src: '/assets/project2/project2_1.png',
+        src: project2_1,
         title: '01. 생산 출하 UI',
         caption: '불필요한 요소는 제외하고 단순한 인터페이스를 구성하였습니다.',
       },
