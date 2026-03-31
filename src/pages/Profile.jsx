@@ -1,7 +1,6 @@
 import '../styles/profile_styles.css'
 
 // react icons
-import { FaUserCircle } from "react-icons/fa";
 import { MdDateRange } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoCall } from "react-icons/io5";
@@ -47,15 +46,13 @@ export default function Profile() {
             <div className='img_pic'>
               <img src="/assets/profile_picture.jpg" alt="Profile Picture" />
             </div>
+            <h3>Moon Byeong Wook</h3>
+            <h2>문병욱</h2>
           </section>
 
           <section className='infoBox'>
             <div className='subTitle'>인적사항</div>
             <div className='infoGrid'>
-              <div className='infoGridItem'>
-                <FaUserCircle className='icon'/>
-                <span className='infoText'>문병욱</span>
-              </div>
               <div className='infoGridItem'>
                 <MdDateRange className='icon'/>
                 <span className='infoText'>2001년 09월 29일</span>
